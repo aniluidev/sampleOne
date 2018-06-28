@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WEATHER APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function relocate_home()
+    {
+         location.href = "http://samples.openweathermap.org/data/2.5/forecast/daily?zip=94040&appid=b6907d289e10d714a6e88b30761fae22";
+    } 
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WEATHER CHANNEL</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">TOADY</a>
+                </li>
+                <li>
+                    <a href="#">HOURLY</a>
+                </li>
+                <li>
+                    <a href="#">WEEKEND</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="text-center">WELCOME TO THE WEATHER APP</h1>
+    <button type="button" id="MyButton" class="btn btn-lg btn-primary center-block" onclick="  relocate_home()">CLICK!</button>
+    <h2 class="text-primary text-center">Responsive Data</h2>
+    <h2 class="text-success text-center">Formatted Data</h2>
+
+</body>
+
+</html>
